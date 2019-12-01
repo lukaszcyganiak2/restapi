@@ -13,4 +13,7 @@ $app->get('/hello/{name}', function (Request $request, Response $response, array
     return $response;
 });
 
+// books Routes
+require '../src/routes/books/books.php';
+
 $app->run();
